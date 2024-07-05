@@ -26,6 +26,7 @@ export const doSignInWithGoogle = async () => {
 };
 
 export const doSignOut = () => {
+  localStorage.clear();
   return auth.signOut();
 };
 
